@@ -11,7 +11,7 @@ import Combine
 import SwiftUI
 
 @propertyWrapper
-struct ObservedPublisher<P:Publisher>:DynamicProperty where P.Failure == Never,P.Output:Equatable{
+struct ObservedPublisher<P:Publisher>:DynamicProperty where P.Failure == Never{
     private let publisher:P
     @State var cancellable:AnyCancellable? = nil
     
