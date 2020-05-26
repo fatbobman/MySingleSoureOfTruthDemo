@@ -13,6 +13,7 @@
 		76046779246FED7500A91C10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76046778246FED7500A91C10 /* Preview Assets.xcassets */; };
 		7604677C246FED7500A91C10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7604677A246FED7500A91C10 /* LaunchScreen.storyboard */; };
 		76046784246FED8800A91C10 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76046783246FED8800A91C10 /* RootView.swift */; };
+		763A8B62247CA67800FE7D65 /* ObservedPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A8B61247CA67800FE7D65 /* ObservedPublisher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7604677B246FED7500A91C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7604677D246FED7500A91C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76046783246FED8800A91C10 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		763A8B61247CA67800FE7D65 /* ObservedPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedPublisher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				7604676F246FED7400A91C10 /* AppDelegate.swift */,
 				76046771246FED7400A91C10 /* SceneDelegate.swift */,
 				76046783246FED8800A91C10 /* RootView.swift */,
+				763A8B61247CA67800FE7D65 /* ObservedPublisher.swift */,
 				76046775246FED7500A91C10 /* Assets.xcassets */,
 				7604677A246FED7500A91C10 /* LaunchScreen.storyboard */,
 				7604677D246FED7500A91C10 /* Info.plist */,
@@ -148,6 +151,7 @@
 			files = (
 				76046770246FED7400A91C10 /* AppDelegate.swift in Sources */,
 				76046772246FED7400A91C10 /* SceneDelegate.swift in Sources */,
+				763A8B62247CA67800FE7D65 /* ObservedPublisher.swift in Sources */,
 				76046784246FED8800A91C10 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

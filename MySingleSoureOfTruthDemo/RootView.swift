@@ -20,13 +20,19 @@ struct RootView: View {
     store.state.student.value.age = Int($0) ?? 0
     print("new:\($0)")
   }) var studentAge
+  @ObservedPublisher(publisher: store.state.title, initial: "") var title
   var body: some View {
     Form {
       Section {
         Text("name is \(name)")
         Text("age is \(age)")
         Text("student name is :\(student.name)")
-        Text("student age is: \(student.age)")
+//        Text("student age is: \(student.age)")
+        Text("title is:\(title)")
+        Button("changetitle"){
+//            print("")
+            store.state.title.value = "title"
+        }
         TextField("studentName:", text: store.state.student.binding(for: \.name))
         Button("changName") {
           store.test()
@@ -94,6 +100,7 @@ struct AppState {
   var age = CurrentValueSubject<Int, Never>(0)
   var student = CurrentValueSubject<Student, Never>(Student())
   var address = CurrentValueSubject<String, Never>("dalian")
+  var title = CurrentValueSubject<String,Never>("manager")
 }
 
 extension CurrentValueSubject {
@@ -157,3 +164,7 @@ struct MyState<Value>: DynamicProperty {
   }
 
 }
+
+
+
+
